@@ -82,3 +82,18 @@ const output4 = array
 
 
 console.log("--->",output4);
+
+//Given an array of objects representing products, return a new array with the name and price of each product, formatted as a string
+
+const product =[
+     
+            {item:"Mobile",price:15000},
+            {item:"charger",price:560},
+            {item:"Earphone",price:1200},
+            {item:"MobileTemper",price:100},
+            {item:"MobileCover",price:120}
+                  
+];
+
+const output5 = product.map((x)=>x.item+" "+x.price);
+console.log(output5);
