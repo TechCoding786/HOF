@@ -183,3 +183,20 @@ const averageAge = student.reduce((acc,curr)=>{
 
  console.log("--->",evenSum);
 
+
+ //Given an array of objects representing students, calculate the sum of the age of all the students who have an age greater than 20.
+
+
+ let students = [
+    {name:"AtifSohail"     ,age:19},
+    {name:"AbhishekKumar"  ,age:17},
+    {name:"MaqsoodAli"     ,age:22},
+    {name:"Ankit"          ,age:20},
+    {name:"rahul"          ,age:21},
+
+ ];
+
+ const agGreaterThan = students.filter((x)=>x.age>20).reduce((acc,curr)=>acc+curr.age,0)
+
+ console.log(agGreaterThan);
+
