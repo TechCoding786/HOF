@@ -58,3 +58,16 @@ const test2 =["Atif","Abhishek","Maqsood","Ankit","Rahul"];
 
 const output3 = test2.map((str)=>str.length);
 console.log(output3);
+
+//Given an array of objects representing people, return a new array with the full names of each person.
+
+const people = [
+{firstName:"akshay", lastName:"Sani"},
+{firstName:"Nitish", lastName:"Kumar"},
+{firstName:"Lalu", lastName:"yadav"},
+{firstName:"tejaswi", lastName:"yadav"}
+];
+
+const fullName = people.map((x)=>x.firstName+" "+x.lastName);
+
+console.log(fullName);
