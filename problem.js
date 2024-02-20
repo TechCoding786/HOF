@@ -71,3 +71,14 @@ const people = [
 const fullName = people.map((x)=>x.firstName+" "+x.lastName);
 
 console.log(fullName);
+
+// Given an array of strings, return a new array with the first letter of each string capitalized and the rest in lowercase
+
+let array =["atif","abhishek","maqsood","ankit","rahul"];
+
+const output4 = array
+    .map((str) => str.charAt(0).toUpperCase() + str.slice(1))    // Capitalize first letter of each string
+    .filter((str) => str.charAt(0) === str.charAt(0).toUpperCase());
+
+
+console.log("--->",output4);
