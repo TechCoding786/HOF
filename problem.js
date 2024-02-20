@@ -111,3 +111,22 @@ const output6 = number.reduce((sum,curr)=>{
 let avg = output6/number.length;
 console.log(avg);
 
+//Given an array of objects representing orders, return the total cost of all the orders, grouped by product
+
+const order =[
+     
+    {item:"Mobile",price:15000},
+    {item:"charger",price:560},
+    {item:"Earphone",price:1200},
+    {item:"MobileTemper",price:100},
+    {item:"MobileCover",price:120}
+          
+];
+
+const output7 = order.reduce((acc,curr)=>{
+    acc = acc + curr.price;
+    return acc;
+},0);
+
+console.log(output7);
+
