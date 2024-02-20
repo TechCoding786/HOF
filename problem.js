@@ -130,3 +130,21 @@ const output7 = order.reduce((acc,curr)=>{
 
 console.log(output7);
 
+const books = [
+    {bookName:'Math'     ,publishDate:2000,pages:756},
+    {bookName:'Physics'  ,publishDate:2018,pages:1756},
+    {bookName:'Chemistry',publishDate:2020,pages:7356},
+    {bookName:'Biology'  ,publishDate:2023,pages:7456},
+    {bookName:'hindi'    ,publishDate:2021,pages:7156},
+    {bookName:'EGD'      ,publishDate:2022,pages:7056}
+];
+
+const currentYear = new Date().getFullYear();
+
+const output8 = books.filter((x)=>(currentYear - x.publishDate)<=5).reduce((acc,curr)=>{
+     acc = acc+ curr.pages
+    return acc;
+},0);
+
+console.log("--->",output8);
+
