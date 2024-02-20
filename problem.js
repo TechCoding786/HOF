@@ -98,3 +98,16 @@ const product =[
 const output5 = product.map((x)=>x.item+" "+x.price);
 console.log(output5);
 
+//Given an array of numbers, return the average of all the numbers
+
+let number =[2,3,4,5,64,45,23];
+
+const output6 = number.reduce((sum,curr)=>{
+    sum = sum + curr;
+    return sum;
+    
+},0);
+
+let avg = output6/number.length;
+console.log(avg);
+
