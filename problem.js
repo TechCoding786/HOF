@@ -49,3 +49,12 @@ const output2 = test.reduce((acc,curr)=>{
    return acc;
 },0);
 console.log("--->",output2);
+
+
+//Given an array of strings, return a new array with the length of each string
+
+
+const test2 =["Atif","Abhishek","Maqsood","Ankit","Rahul"];
+
+const output3 = test2.map((str)=>str.length);
+console.log(output3);
