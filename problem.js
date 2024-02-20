@@ -97,3 +97,4 @@ const product =[
 
 const output5 = product.map((x)=>x.item+" "+x.price);
 console.log(output5);
+
