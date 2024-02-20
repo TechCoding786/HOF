@@ -31,6 +31,8 @@ const test1 = [
 // const output1 = test1?.filter((item) => item?.completed);
 // console.log('---->' , output1);
 
+
+
 const output1 = test1?.filter((x)=>x?.completed);
 console.log("--->",output1);
 
@@ -199,4 +201,19 @@ const averageAge = student.reduce((acc,curr)=>{
  const agGreaterThan = students.filter((x)=>x.age>20).reduce((acc,curr)=>acc+curr.age,0)
 
  console.log(agGreaterThan);
+
+ //Given a REST API endpoint that returns an array of blog post objects, use the reduce function
+ // to calculate the total number of likes for all the blog posts.
+
+ let blogPost = [
+    {socialSites:"facebook" ,post:4550},
+    {socialSites:"isntagram",post:4105},
+    {socialSites:"twitter"  ,post:2550},
+    {socialSites:"LikedIn"  ,post:1550},
+    {socialSites:"SnapChat" ,post:2550},
+    {socialSites:"whatApp"  ,post:3150},
+
+ ];
+const totalPost = blogPost.reduce((acc,curr)=>acc+curr.post,0);
+console.log("-->",totalPost);
 
