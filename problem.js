@@ -130,6 +130,9 @@ const output7 = order.reduce((acc,curr)=>{
 
 console.log(output7);
 
+//Given an array of objects representing books, create a new array with only the books published in the last 5 years,
+// then calculate the total number of pages for those books
+
 const books = [
     {bookName:'Math'     ,publishDate:2000,pages:756},
     {bookName:'Physics'  ,publishDate:2018,pages:1756},
