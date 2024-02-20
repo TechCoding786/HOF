@@ -151,3 +151,35 @@ const output8 = books.filter((x)=>(currentYear - x.publishDate)<=5).reduce((acc,
 
 console.log("--->",output8);
 
+
+//Given an array of objects representing students, calculate the average age of all the students.
+
+
+const student =[
+    {age:23},
+    {age:22},
+    {age:12},
+    {age:26}
+];
+
+
+const averageAge = student.reduce((acc,curr)=>{
+    acc = acc + curr.age;
+    return acc;
+},0);
+
+ let avg1 = averageAge/student.length;
+ console.log("--->"+avg1);
+
+ //Given an array of numbers, calculate the sum of all the even numbers.
+
+ let numbers = [3,4,6,45,34,33,30,10];
+
+ const even =numbers.filter((n)=>n%2==0);
+
+ console.log("--->",even);
+
+ let evenSum = even.reduce((acc,curr)=>(acc+curr),0);
+
+ console.log("--->",evenSum);
+
