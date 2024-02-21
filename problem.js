@@ -217,3 +217,100 @@ const averageAge = student.reduce((acc,curr)=>{
 const totalPost = blogPost.reduce((acc,curr)=>acc+curr.post,0);
 console.log("-->",totalPost);
 
+//Given a REST API endpoint that returns an array of movie objects, use the filter function to only include movies with a rating greater than
+// or equal to 8, and then use the map function to only include the movie titles.
+
+
+const movies =[
+    {rating:4, title:"TigerZindahai"},
+    {rating:8, title:"EkThaTiger"},
+    {rating:10, title:"Titanic"},
+    {rating:11, title:"Animals"},
+    {rating:1, title:"3idiots"},
+
+];
+
+const ratingGreater =movies.filter(function(x){
+    return x.rating<=8;
+}).map((film)=>film.title);
+
+console.log("--->",ratingGreater);
+
+//Given a REST API endpoint that returns an array of weather data objects,
+// use the reduce function to calculate the average temperature for a specific location.
+
+const weather =[
+        {location:"patna"   ,temprature:20},
+        {location:"Delhi"   ,temprature:35},
+        {location:"Banglore",temprature:27},
+        {location:"ranchi"  ,temprature:21},
+        {location:"bengal"  ,temprature:40},
+];
+
+const sumTemparature = weather.reduce((acc,curr)=>acc+curr.temprature,0);
+
+console.log("--->",sumTemparature);
+
+let avgTemprature = sumTemparature/weather.length;
+
+console.log("--->",avgTemprature);
+
+
+const data =[
+    {
+        "name":"Atif",
+        "age":22,
+        "gender":"male",
+        "country":"USA"
+    
+    },
+
+    {
+        "name":"candy",
+        "age":32,
+        "gender":"male",
+        "country":"canada"
+    
+    },
+
+    {
+        "name":"bittu",
+        "age":32,
+        "gender":"male",
+        "country":"canada"
+    
+    },
+    {
+        "name":"Maqsood",
+        "age":20,
+        "gender":"male",
+        "country":"India"
+    
+    },
+
+];
+
+//a) Write a JavaScript function that takes the above data and filters out all people whose age is less than 25.
+
+const lessThan25 = data.filter((x)=>x.age<25);
+console.log("--->",lessThan25);
+
+//Write a JavaScript function that takes the above data and filters out all people whose country is not “USA”.
+
+const  countryNotUSA = data.filter((x)=>x.country!=="USA");
+
+console.log('--->',countryNotUSA);
+
+
+//Write a JavaScript function that takes the above data and sorts it by age in ascending order.
+
+const SortedData = data.sort((a,b)=>a.age-b.age);
+
+console.log("--->",SortedData);
+
+//d) Write a JavaScript function that takes the above data and sorts it by name in alphabetical order.
+
+const sorts = data.sort((a,b)=>a.name.localeCompare(b.name));
+
+console.log(sorts);
+
