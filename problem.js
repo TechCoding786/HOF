@@ -314,3 +314,18 @@ const sorts = data.sort((a,b)=>a.name.localeCompare(b.name));
 
 console.log(sorts);
 
+//Given a REST API endpoint that returns an array of product objects, use the forEach function to print the name and price of each product
+
+const product2 = [
+    { name: "Mobile", price: 15000 },
+    { name: "charger", price: 560 },
+    { name: "Earphone", price: 1200 },
+    { name: "MobileTemper", price: 100 },
+    { name: "MobileCover", price: 120 }
+];
+
+product2.forEach((item) => {
+    console.log(item.name + " " + item.price);
+});
+
+
